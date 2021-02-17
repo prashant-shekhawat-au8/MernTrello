@@ -2,7 +2,7 @@ const express=require("express")
 const app=express()
 const mongoose=require('mongoose');
 const dotenv=require('dotenv')
-const port=5003
+const port=process.env.PORT||5004
 //import route
 const authRoute=require('./routes/auth.js')
 const taskRoute=require('./routes/task.js')
