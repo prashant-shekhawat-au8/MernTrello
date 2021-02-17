@@ -1,2 +1,2 @@
 # MernTrello
-this trello have backend and fontend
+this trello have backend and frontend
