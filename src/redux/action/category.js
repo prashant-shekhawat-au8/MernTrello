@@ -1,5 +1,5 @@
 export const category =(search)=> async dispatch => {
-    fetch("/category",{
+    fetch("https://trelllo-mern.herokuapp.com/category",{
         method:'GET'
         })
     .then((res) => res.json())
