@@ -170,7 +170,7 @@ class Weather extends Component {
         })
     }
     handleiDelete = (event) => {
-        fetch(`/task/${event.target.value}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/task/${event.target.value}`,{
             method:'DELETE',
         })
         .then((res) => res.json())
