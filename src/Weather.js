@@ -278,7 +278,7 @@ class Weather extends Component {
                 
                 )}
                 <>
-                <Button color="danger" value={map._name} onClick={(event) => { 
+                <Button color="danger" value={map._id} onClick={(event) => { 
                     this.setState({ 
                     isOpen: true,
                     category_id:event.target.value
