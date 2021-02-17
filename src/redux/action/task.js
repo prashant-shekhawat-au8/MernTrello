@@ -1,5 +1,6 @@
 export const task =(search)=> async dispatch => {
-    fetch("https://trelllo-mern.herokuapp.com/task",{
+    
+    fetch("trelllo-mern.herokuapp.com/task",{
         method:'GET'
         })
     .then((res) => res.json())
