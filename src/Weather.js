@@ -48,10 +48,10 @@ class Weather extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         if(prevProps.categories!== this.props.categories){
-            //this.props.category()
+            this.props.category()
         }
         if(prevProps.tasks!==this.props.tasks){
-            //this.props.task();
+            this.props.task();
         }
       }
 
