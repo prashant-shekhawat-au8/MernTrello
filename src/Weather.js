@@ -57,7 +57,7 @@ class Weather extends Component {
 
     handleUpdate = (event) => {
         
-        fetch(`/category/${this.state.category_id}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/category/${this.state.category_id}`,{
             method:'PUT',
             headers:{
                 'Accept':'application/json',
@@ -74,7 +74,7 @@ class Weather extends Component {
 
     handleMoveUpdate = (event) => {
         
-        fetch(`/task/move/${this.state.category_id}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/task/move/${this.state.category_id}`,{
             method:'PUT',
             headers:{
                 'Accept':'application/json',
@@ -90,7 +90,7 @@ class Weather extends Component {
     }
     handleStatusUpdate = (event) => {
         
-        fetch(`/task/Cs/${this.state.category_id}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/task/Cs/${this.state.category_id}`,{
             method:'PUT',
             headers:{
                 'Accept':'application/json',
@@ -107,7 +107,7 @@ class Weather extends Component {
 
     handleiUpdate = (event) => {
         
-        fetch(`/task/${this.state.category_id}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/task/${this.state.category_id}`,{
             method:'PUT',
             headers:{
                 'Accept':'application/json',
@@ -124,7 +124,7 @@ class Weather extends Component {
 
     handleAddCategory = (event) => {
         
-        fetch(`/category`,{
+        fetch(`https://trelllo-mern.herokuapp.com/category`,{
             method:'POST',
             headers:{
                 'Accept':'application/json',
@@ -141,7 +141,7 @@ class Weather extends Component {
 
     handleAddTask = (event) => {
         
-        fetch(`/task`,{
+        fetch(`https://trelllo-mern.herokuapp.com/task`,{
             method:'POST',
             headers:{
                 'Accept':'application/json',
@@ -160,7 +160,7 @@ class Weather extends Component {
     }
 
     handleDelete = (event) => {
-        fetch(`/category/${event.target.value}`,{
+        fetch(`https://trelllo-mern.herokuapp.com/category/${event.target.value}`,{
             method:'DELETE',
         })
         .then((res) => res.json())
