@@ -1,6 +1,7 @@
 const express=require("express")
 const app=express()
 const mongoose=require('mongoose');
+const cors = require("cors")
 const dotenv=require('dotenv')
 dotenv.config();
 const port=process.env.PORT||5004
@@ -14,6 +15,8 @@ mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopol
 
 //middleware  body parser
 app.use(express.json());
+app.use(cors())
+
 
 //Routes middleware
 app.use('/category',authRoute);
